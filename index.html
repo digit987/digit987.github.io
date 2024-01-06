@@ -73,15 +73,12 @@
       }
       a:hover {
       color: #034471;
-      }    
-      a.resume {
-      color: #000000;
-      text-decoration: none;
-      transition: color 0.3s ease-in-out;
       }
-      a.resume:hover {
-      color: #000000; /* Darker color on hover */
-      } 
+      .project p .technologies {
+      font-weight: bold;
+      //color: #24292e; /* Color for "Technologies:" */
+      }
+
     </style>
   </head>
   <body>
@@ -144,7 +141,7 @@
           Used GPT-3.5 Turbo model to generate news summary for BBC news dataset and
           compared them with reference summaries using ROGUE scores.
           <br />
-          <b>Technologies:</b> GPT-3.5 Turbo, evaluate
+          <span class="technologies">Technologies:</span> GPT-3.5 Turbo, evaluate
           <br />
           <a href="https://github.com/digit987/gpt_news_summary">https://github.com/digit987/gpt_news_summary</a>
         </p>
@@ -156,7 +153,7 @@
           of OpenAI, which converts speech to text. The text was then fed as a prompt to GPT-4 model which
           generated responses. The text responses were converted to audio responses using library pyttsx3.
           <br />
-          <b>Technologies:</b> GPT-4, Whisper-1, pyttsx3
+          <span class="technologies">Technologies:</span> GPT-4, Whisper-1, pyttsx3
           <br />
           <a href="https://github.com/digit987/gpt_speech_conversation">https://github.com/digit987/gpt_speech_conversation</a>
         </p>
@@ -167,7 +164,7 @@
           A JavaScript App powered by GPT to answer CS questions. Helpful in GATE Exam. Live at:
           https://gatecsdoubts.netlify.app
           <br />
-          <b>Technologies:</b> GPT-3.5 Turbo, JavaScript
+          <span class="technologies">Technologies:</span> GPT-3.5 Turbo, JavaScript
           <br />
           <a href="https://github.com/digit987/gatecsdoubts_gpt_app">https://github.com/digit987/gatecsdoubts_gpt_app</a>
         </p>
@@ -178,7 +175,7 @@
           Generated dummy demographic data for identifiers namely Aadhaar No., Mobile No.,
           House No., Pincode, Employer Details, Working Conditions etc.
           <br />
-          <b>Technologies:</b> pandas
+          <span class="technologies">Technologies:</span> pandas
           <br />
           <a href="https://github.com/digit987/dummy_demographic_data_generation">https://github.com/digit987/dummy_demographic_data_generation</a>
         </p>
@@ -192,7 +189,7 @@
           Fetched earthquake data using Node.js API. Stored and ingested it using ElasticSearch
           pipeline, processors and indexing.
           <br />
-          <b>Technologies:</b> ElasticSearch, Node.js, Express.js
+          <span class="technologies">Technologies:</span> ElasticSearch, Node.js, Express.js
           <br />
           <a href="https://github.com/digit987/earthquake_nodejs_elastic">https://github.com/digit987/earthquake_nodejs_elastic</a>
         </p>
@@ -203,7 +200,7 @@
           Built a scraper to scrape a stock website every 60 seconds and store the data in pandas
           DataFrame.
           <br />
-          <b>Technologies:</b> BeautifulSoup4, pandas, numpy
+          <span class="technologies">Technologies:</span> BeautifulSoup4, pandas, numpy
           <br />
           <a href="https://github.com/digit987/stocks_scraper_analysis">https://github.com/digit987/stocks_scraper_analysis</a>
         </p>
@@ -214,7 +211,7 @@
           Wrote a crawler to get Indian song lyrics, used LDA to extract topics from them to use as
           input features and built supervised and unsupervised models to classify the song mood.
           <br />
-          <b>Technologies:</b> BeautifulSoup4, scikit-learn, pandas, matplotlib
+          <span class="technologies">Technologies:</span> BeautifulSoup4, scikit-learn, pandas, matplotlib
           <br />
           <a href="https://github.com/digit987/music_mood_prediction">https://github.com/digit987/music_mood_prediction</a>
         </p>
@@ -224,7 +221,7 @@
         <p>
           Built Scraper using BeautifulSoup, pandas and Newspaper3k to get Google News.
           <br />
-          <b>Technologies:</b> BeautifulSoup4, Newspaper3k, pandas
+          <span class="technologies">Technologies:</span> BeautifulSoup4, Newspaper3k, pandas
           <br />
           <a href="https://github.com/digit987/google_news_scraper">https://github.com/digit987/google_news_scraper</a>
         </p>
@@ -235,7 +232,7 @@
           Scraped SEC EDGAR financial reports and performed text analysis to calculate various
           metrics for various sections.
           <br />
-          <b>Technologies:</b> BeautifulSoup4, pandas, nltk
+          <span class="technologies">Technologies:</span> BeautifulSoup4, pandas, nltk
           <br />
           <a href="https://github.com/digit987/edgar_financial_reports_scraping_text_analysis">https://github.com/digit987/edgar_financial_reports_scraping_text_analysis</a>
         </p>
@@ -245,7 +242,7 @@
         <p>
           Scraped a list of Blogs and analyzed text using metrics.
           <br />
-          <b>Technologies:</b> Python, BeautifulSoup4, openpyxl, pandas, nltk
+          <span class="technologies">Technologies:</span> Python, BeautifulSoup4, openpyxl, pandas, nltk
           <br />
           <a href="https://github.com/digit987/blog_scraping_text_analysis">https://github.com/digit987/blog_scraping_text_analysis</a>
         </p>
@@ -259,7 +256,7 @@
           Used Node.js and Mongoose to build a Music REST API with OAuth, User Favourites,
           Artists, Albums, Songs and Playlists. Consumed the API using Axios client.
           <br />
-          <b>Technologies:</b> Node.js, Express.js, Mongoose (MongoDB), axios, bcrypt
+          <span class="technologies">Technologies:</span> Node.js, Express.js, Mongoose (MongoDB), axios, bcrypt
           <br />
           <a href="https://github.com/digit987/node_music_api">https://github.com/digit987/node_music_api</a>
         </p>
@@ -270,7 +267,7 @@
           Used Django and Djongo (for DB schema) to build a Photo Sharing REST API with Posts,
           Comments, Tags, Followers and Following.
           <br />
-          <b>Technologies:</b> Django, Djongo (MongoDB)
+          <span class="technologies">Technologies:</span> Django, Djongo (MongoDB)
           <br />
           <a href="https://github.com/digit987/django_picsta_api">https://github.com/digit987/django_picsta_api</a>
         </p>
@@ -281,7 +278,7 @@
           Built a portal using PHP, MySQL and HTML for Online Shopping System with cart
           management, ratings and shop by category.
           <br />
-          <b>Technologies:</b> PHP, JavaScript, HTML
+          <span class="technologies">Technologies:</span> PHP, JavaScript, HTML
           <br />
           <a href="https://github.com/digit987/online_shopping_system">https://github.com/digit987/online_shopping_system</a>
         </p>
@@ -295,7 +292,7 @@
           Built a React.js SPA to consume Codeforces API and expose its features like Contests,
           Problems, Blogs, and Comments.
           <br />
-          <b>Technologies:</b> ReactJS, JavaScript, CSS, HTML
+          <span class="technologies">Technologies:</span> ReactJS, JavaScript, CSS, HTML
           <br />
           <a href="https://github.com/digit987/codeforces_api_react">https://github.com/digit987/codeforces_api_react</a>
         </p>
@@ -305,7 +302,7 @@
         <p>
           Built a home page for an educational website.
           <br />
-          <b>Technologies:</b> JavaScript, CSS, HTML
+          <span class="technologies">Technologies:</span> JavaScript, CSS, HTML
           <br />
           <a href="https://github.com/digit987/educational_website">https://github.com/digit987/educational_website</a>
         </p>
@@ -340,7 +337,7 @@
         <p>
           Solved data structure problems.
           <br />
-          <b>Technologies:</b> Python
+          <span class="technologies">Technologies:</span> Python
           <br />
           <a href="https://github.com/digit987/data_structures">https://github.com/digit987/data_structures</a>
         </p>
@@ -350,7 +347,7 @@
         <p>
           Solved problems related to the application of dynamic programming.
           <br />
-          <b>Technologies:</b> Python, C
+          <span class="technologies">Technologies:</span> Python, C
           <br />
           <a href="https://github.com/digit987/dynamic_programming">https://github.com/digit987/dynamic_programming</a>
         </p>
@@ -360,7 +357,7 @@
         <p>
           Solved problems related to the application of graphs and trees.
           <br />
-          <b>Technologies:</b> Python
+          <span class="technologies">Technologies:</span> Python
           <br />
           <a href="https://github.com/digit987/graphs_and_trees">https://github.com/digit987/graphs_and_trees</a>
         </p>
